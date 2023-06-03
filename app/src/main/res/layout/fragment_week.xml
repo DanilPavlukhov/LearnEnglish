@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeekFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/logo"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/weatherBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/weather"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="weather"
+                    android:textSize="30sp" />
+
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/restaurant"
+                    android:id="@+id/restaurantBtn"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:text="restaurant"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/logo"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo2"
+                >
+                <ImageButton
+                    android:id="@+id/museumBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/museum"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/museumBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:text="sport"
+                    android:textSize="30sp" />
+
+                <ImageButton
+                    android:id="@+id/sportBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sport"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/museumBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="museum"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logo3"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/logo2"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:id="@+id/professionBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profession"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/professionBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:text="professions"
+                    android:textSize="30sp" />
+                <ImageButton
+                    android:id="@+id/toolBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tools"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/professionBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dp"
+                    android:text="tools"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/logo3"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:id="@+id/furnitureBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/furniture"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/furnitureBtn"
+                    android:text="furniture"
+                    android:textSize="30sp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

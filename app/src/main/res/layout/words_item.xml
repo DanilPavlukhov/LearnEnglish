@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    app:strokeColor="@color/btn1"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:padding="20dp"
+        android:background="@drawable/eng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="English:"
+            android:textSize="30sp"
+            android:id="@+id/english"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/english"
+            android:backgroundTint="@color/btn1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/item_btn"
+            tools:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+        <TextView
+            android:layout_below="@+id/item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Русский:"
+            android:textSize="30sp"
+            android:id="@+id/russian"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

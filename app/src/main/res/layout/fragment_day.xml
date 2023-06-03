@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/logo"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/airportBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/airport"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taxiBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="35dp"
+                    android:text="airport"
+                    android:textSize="30sp" />
+
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/taxi"
+                    android:id="@+id/taxiBtn"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taxiBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:text="taxi"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/logo"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo2"
+                >
+                <ImageButton
+                    android:id="@+id/hotelBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hotel"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hotelBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dp"
+                    android:text="shop"
+                    android:textSize="30sp" />
+
+                <ImageButton
+                    android:id="@+id/shopBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shops"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hotelBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="35dp"
+                    android:text="hotel"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logo3"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/logo2"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:id="@+id/helloBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hello"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helloBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="35dp"
+                    android:text="hello"
+                    android:textSize="30sp" />
+                <ImageButton
+                    android:id="@+id/foodBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/foo"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helloBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dp"
+                    android:text="food"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/logo3"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:id="@+id/hospitalBtn"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hospital"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hospitalBtn"
+                    android:text="hospital"
+                    android:textSize="30sp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
