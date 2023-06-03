@@ -10,7 +10,7 @@
     >
     <RelativeLayout
         android:padding="20dp"
-        android:background="@drawable/eng"
+        android:background="@drawable/neweng"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
@@ -21,14 +21,15 @@
             android:textSize="30sp"
             android:id="@+id/english"/>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/english"
-            android:backgroundTint="@color/btn1"
             android:layout_alignParentRight="true"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/button"
             android:id="@+id/item_btn"
-            tools:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            />
         <TextView
             android:layout_below="@+id/item_btn"
             android:layout_width="wrap_content"

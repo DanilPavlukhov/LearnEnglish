@@ -3,62 +3,57 @@ package com.example.learnenglish;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ShopFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class ShopFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ShopFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ShopFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ShopFragment newInstance(String param1, String param2) {
-        ShopFragment fragment = new ShopFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    RecyclerView recyclerView;
+    MyAdapter adapter;
+    List<Word> list;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shop, container, false);
+        View view = inflater.inflate(R.layout.fragment_shop, container, false);
+        recyclerView =(RecyclerView)view.findViewById(R.id.shopFrame);
+        getList();
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        adapter = new MyAdapter(getActivity(),list);
+        recyclerView.setAdapter(adapter);
+        return view;
+    }
+    private void getList() {
+        list = new ArrayList<>();
+        list.add(new Word("English: an appliance store "
+                ,"Русский: магазин бытовой техники"));
+        list.add(new Word("English: a bookshop"
+                ,"Русский: книжный магазин"));
+        list.add(new Word("English: a department store "
+                ,"Русский: универмаг (продаются все товары)"));
+        list.add(new Word("English: a greengrocer’s"
+                ,"Русский: овощной магазин"));
+        list.add(new Word("English: a grocer’s "
+                ,"Русский: продуктовый магазин "));
+        list.add(new Word("English: a market"
+                ,"Русский: рынок"));
+        list.add(new Word("English: a pet shop"
+                ,"Русский: зоомагазин"));
+        list.add(new Word("English: a supermarket","Русский: супермаркет"));
+        list.add(new Word("English: Where is the nearest supermarket?","Русский: Где находится ближайший супермаркет?"));
+        list.add(new Word("English: cash","Русский: наличные"));
+        list.add(new Word("English: change","Русский: сдача"));
+        list.add(new Word("English: sale","Русский: распродажа"));
+        list.add(new Word("English: cheap","Русский: дешевый"));
+        list.add(new Word("English: expensive","Русский: дорогой"));
+
     }
 }

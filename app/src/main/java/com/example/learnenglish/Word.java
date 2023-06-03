@@ -5,9 +5,9 @@ public class Word {
     private String english;
     //private int int_Image;
 
-    public Word(String codeName, String codeVersion /*, int int_Image*/) {
-        this.russian = codeName;
-        this.english = codeVersion;
+    public Word(String english, String russian /*, int int_Image*/) {
+        this.russian = russian;
+        this.english = english;
         //this.int_Image = int_Image;
     }
 

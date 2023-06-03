@@ -42,12 +42,17 @@ public class AirportFragment extends Fragment {
                 ,"Русский: Я бы хотел заказать билет до Москвы."));
         list.add(new Word("English: I’d like to make a reservation on the 7.45 evening flight from London to Boston. "
                 ,"Русский: Я бы хотел забронировать билет на вечерний рейс из Лондона в Бостон в 19:45."));
-        list.add(new Word("English: "
-                ,"Русский"));
-        list.add(new Word("English: "
-                ,"Русский"));
-        list.add(new Word("English: "
-                ,"Русский"));
+        list.add(new Word("English: How much is an air ticket to Moscow?"
+                ,"Русский: Сколько стоит билет на самолет в Москву?"));
+        list.add(new Word("English: Is there any discount? "
+                ,"Русский: Есть ли какие-нибудь скидки?"));
+        list.add(new Word("English: How long does the flight take?"
+                ,"Русский: Как долго продолжается полет?"));
+        list.add(new Word("English: I’d like to check-in my luggage."
+                ,"Русский: Я хочу зарегистрировать свой багаж."));
+        list.add(new Word("English: May I see your passport, please?"
+                ,"Русский: Ваш паспорт, пожалуйста."));
+
 
 
     }

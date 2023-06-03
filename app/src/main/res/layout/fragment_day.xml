@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/taxiBtn"
                     android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginLeft="25dp"
                     android:text="airport"
                     android:textSize="30sp" />
 
@@ -49,8 +49,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/taxiBtn"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="45dp"
-                    android:text="taxi"
+                    android:layout_marginRight="5dp"
+                    android:text="transport"
                     android:textSize="30sp" />
 
             </RelativeLayout>

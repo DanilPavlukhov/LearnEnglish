@@ -3,62 +3,59 @@ package com.example.learnenglish;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link TaxiFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class TaxiFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public TaxiFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment TaxiFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static TaxiFragment newInstance(String param1, String param2) {
-        TaxiFragment fragment = new TaxiFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    RecyclerView recyclerView;
+    MyAdapter adapter;
+    List<Word> list;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_taxi, container, false);
+        View view = inflater.inflate(R.layout.fragment_taxi, container, false);
+        recyclerView =(RecyclerView)view.findViewById(R.id.taxiFrame);
+        getList();
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        adapter = new MyAdapter(getActivity(),list);
+        recyclerView.setAdapter(adapter);
+        return view;
+    }
+    private void getList() {
+        list = new ArrayList<>();
+        list.add(new Word("English: a vehicle "
+                ,"Русский: транспортное средство"));
+        list.add(new Word("English: a car"
+                ,"Русский: машина"));
+        list.add(new Word("English: a motorbike "
+                ,"Русский: мотоцикл"));
+        list.add(new Word("English: a taxi"
+                ,"Русский: такси"));
+        list.add(new Word("English: a subway "
+                ,"Русский: метро"));
+        list.add(new Word("English: a bus"
+                ,"Русский: Как долго продолжается полет?"));
+        list.add(new Word("English: a train"
+                ,"Русский: поезд"));
+        list.add(new Word("English: a railway","Русский: железнодорожный вокзал"));
+        list.add(new Word("English: a bus stop","Русский: остановка автобуса"));
+        list.add(new Word("English: a subway station","Русский: станция метро"));
+        list.add(new Word("English: a petrol station","Русский: заправка"));
+        list.add(new Word("English: a street","Русский: улица"));
+        list.add(new Word("English: a bridge","Русский: мост"));
+        list.add(new Word("English: traffic lights","Русский: светофор"));
+
+
+
     }
 }
