@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_3;
     private Button btn_4;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btn_2 =  findViewById(R.id.btn_2);
         btn_3 =  findViewById(R.id.btn_3);
         btn_4 =  findViewById(R.id.btn_4);
+
     }
     private void listener(){
         btn_1.setOnClickListener(v -> {
