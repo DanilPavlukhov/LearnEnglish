@@ -1,6 +1,7 @@
 package com.example.learnenglish;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -36,18 +37,18 @@ public class AirportFragment extends Fragment {
     }
     private void getList() {
         list = new ArrayList<>();
-        list.add(new Word("English: I’d like to make an airline reservation. "
-                ,"Русский: Я бы хотел забронировать билет на самолет."));
-        list.add(new Word("English: I’d like to book a seat to Moscow"
-                ,"Русский: Я бы хотел заказать билет до Москвы."));
+        list.add(new Word("English: I’d like to make an airline reservation. ","Русский: Я бы хотел забронировать билет на самолет."
+                ,R.raw.audio1));
+        list.add(new Word("English: I’d like to book a seat to Moscow","Русский: Я бы хотел заказать билет до Москвы.",R.raw.airport1));
         list.add(new Word("English: I’d like to make a reservation on the 7.45 evening flight from London to Boston. "
-                ,"Русский: Я бы хотел забронировать билет на вечерний рейс из Лондона в Бостон в 19:45."));
+                ,"Русский: Я бы хотел забронировать билет на вечерний рейс из Лондона в Бостон в 19:45.",
+                R.raw.airport2));
         list.add(new Word("English: How much is an air ticket to Moscow?"
-                ,"Русский: Сколько стоит билет на самолет в Москву?"));
+                ,"Русский: Сколько стоит билет на самолет в Москву?",R.raw.airport3));
         list.add(new Word("English: Is there any discount? "
-                ,"Русский: Есть ли какие-нибудь скидки?"));
+                ,"Русский: Есть ли какие-нибудь скидки?",R.raw.airport4));
         list.add(new Word("English: How long does the flight take?"
-                ,"Русский: Как долго продолжается полет?"));
+                ,"Русский: Как долго продолжается полет?",R.raw.airport5));
         list.add(new Word("English: I’d like to check-in my luggage."
                 ,"Русский: Я хочу зарегистрировать свой багаж."));
         list.add(new Word("English: May I see your passport, please?"

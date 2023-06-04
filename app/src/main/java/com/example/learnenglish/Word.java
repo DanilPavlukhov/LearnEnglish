@@ -1,9 +1,35 @@
 package com.example.learnenglish;
 
+import android.media.MediaPlayer;
+import android.net.Uri;
+import android.provider.MediaStore;
+
+
+
 public class Word {
     private String russian;
     private String english;
-    //private int int_Image;
+    private int mp;
+    private Uri uri;
+
+    public void setMp(int mp) {
+        this.mp = mp;
+    }
+
+    public int getMp() {
+        return mp;
+    }
+
+    public Uri getUri() {
+        return uri;
+    }
+
+    public Word(String english, String russian, int mp) {
+        this.russian = russian;
+        this.english = english;
+        this.mp = mp;
+    }
+//private int int_Image;
 
     public Word(String english, String russian /*, int int_Image*/) {
         this.russian = russian;
