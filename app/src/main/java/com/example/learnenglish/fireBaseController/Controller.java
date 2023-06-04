@@ -17,7 +17,8 @@ public class Controller {
     public FirebaseUser getUser(){
         return auth.getCurrentUser();
     }
-    public void registrationNewUser(String email, String password, OnCompleteListener<AuthResult> listener){
+    public void registrationNewUser(String email, String password,
+                                    OnCompleteListener<AuthResult> listener){
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(listener);
     }
 }
